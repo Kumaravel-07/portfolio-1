@@ -1,0 +1,408 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-pri {
+    background-color: #133E87;
+}
+
+.bg-sec {
+    background-color: #F96E2A;
+}
+
+.link {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.main-body .about-banner {
+    display: flex;
+    height: 85vh;
+    gap: 20px;
+    /* width: 100vw; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.main-body .about-banner .about-left {
+    /* width: 50%;   */
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua;   */
+
+    /* background-color: aquamarine; */
+}
+
+.main-body .about-banner .about-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    background-color: beige;
+}
+
+.main-body .about-banner .about-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-body .about-banner .about-right .chat {
+    width: 40%;
+}
+
+/* journey */
+.main-body .journey {
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.main-body .journey .journey-card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0px 0px 0px 120px;
+    /* background-color: aquamarine; */
+    border-left: #133E87 5px dashed;
+    /* align-items: end; */
+    position: relative;
+}
+
+.main-body .journey .journey-card .dot-back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    filter: blur(2px);
+    /* -webkit-backdrop-filter: blur(10px);  */
+    top: -25px;
+    left: -25px;
+    /* background-color: ; */
+}
+
+.main-body .journey .journey-card .dot-back .dot {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+.main-body .journey .journey-card .journeyCardHead {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-body .journey .journey-card .journeyCardHead .head-journey {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 80px; */
+}
+
+.main-body .journey .journey-card .journeyCardDetails {
+    width: 100%;
+}
+
+/* hobby */
+.main-body .hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 80px;
+}
+
+.main-body .hobby .hobbyCardHolder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards {
+    width: 20%;
+    height: 300px;
+    border: #F96E2A 3px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards .hobbyImageHolder {
+    background-color: #CBDCEB;
+    border-radius: 10px;
+    margin: 5px 0px 0px 0px;
+    width: 90%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.7s;
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards:hover .hobbyImageHolder {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards .hobbyImageHolder .orangebg {
+    width: 80%;
+    height: 77%;
+    border-radius: 50%;
+    background-color: #F96E2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards:hover .orangebg {
+    height: 60%;
+
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards .hobbyImageHolder .orangebg img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards .hikingName {
+    text-align: center;
+}
+
+.main-body .hobby .hobbyCardHolder .hobbyCards :hover .hikingName p {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: #fdfdfd;
+
+}
+
+/* qoutes */
+.main-body .qoutes {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 80px;
+    /* background-color: aqua; */
+}
+
+.main-body .qoutes .qoutes-left {
+    width: 50%;
+}
+
+.main-body .qoutes .qoutes-left .qoutes-content {
+    /* width: 80%; */
+    padding: 0px 0px 0px 20px;
+    /* background-color: #F96E2A; */
+}
+
+.main-body .qoutes .qoutes-left .qoutes-author {
+    display: flex;
+    justify-content: end;
+}
+
+.main-body .qoutes .qoutes-left .down {
+    display: flex;
+    justify-content: end;
+}
+
+/* .main-body .qoutes .qoutes-left .up{
+    line-height: 100%;
+} */
+.main-body .qoutes .qoutes-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+/* 930px */
+@media (max-width:930px) {
+    .button {
+        width: 50%;
+    }
+
+    .main-body .about-banner {
+        padding: 0px 60px;
+    }
+
+    .main-body .journey {
+        padding: 0px 60px;
+        gap: 60px;
+    }
+
+    .main-body .hobby {
+        padding: 40px 60px 0px 60px;
+
+    }
+
+    .main-body .hobby .hobbyCardHolder .hobbyCards {
+        height: 250px;
+    }
+
+    .main-body .qoutes {
+        padding: 40px 60px;
+    }
+
+}
+
+@media (max-width:840px) {
+    .fs-subhead {
+        font-size: 20px;
+    }
+
+    .main-body .about-banner .about-left {
+        width: 30%;
+        height: auto;
+        /* background-color: #133E87; */
+    }
+
+    .main-body .about-banner .about-left img {
+        border-radius: 20px;
+    }
+
+    .main-body .about-banner .about-right {
+        width: 70%;
+    }
+
+    .main-body .hobby .hobbyCardHolder .hobbyCards {
+        width: 20%;
+        height: 200px;
+        text-align: center;
+    }
+
+    .main-body .hobby .hobbyCardHolder .hobbyCards .hobbyImageHolder .orangebg {
+        width: 90%;
+        height: 70%;
+    }
+
+    .main-body .journey .journey-card .journeyCardHead {
+        gap: 12px;
+    }
+
+    .main-body .journey .journey-card {
+        gap: 32px;
+        padding: 0px 0px 0px 90px;
+    }
+}
+
+@media (max-width:690px) {
+    .main-body .hobby .hobbyCardHolder .hobbyCards {
+        width: 22%;
+    }
+}
+
+@media (max-width:570px) {
+    .main-body .about-banner {
+        padding: 0px 24px;
+    }
+
+    .main-body .journey {
+        padding: 0px 24px;
+        gap: 20px;
+    }
+
+    .main-body .journey .journey-card {
+        gap: 20px;
+    }
+
+    .main-body .journey .journey-card {
+        padding: 0px 0px 0px 45px;
+    }
+
+    .main-body .hobby {
+        gap: 20px;
+        padding: 20px 24px;
+    }
+
+    .main-body .qoutes {
+        padding: 20px 24px;
+    }
+}
+
+@media (max-width:450px) {
+    .main-body .about-banner {
+        position: relative;
+    }
+
+    .main-body .about-banner .about-left {
+        width: 75px;
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        left: 5px;
+        overflow: hidden;
+    }
+
+    .main-body .about-banner .about-right {
+        width: 100%;
+    }
+
+    .main-body .about-banner .about-right h1 {
+        margin-left: 65px;
+    }
+
+    .main-body .hobby .hobbyCardHolder .hobbyCards {
+        border: #F96E2A 1.5px solid;
+        height: 70px;
+    }
+
+    .main-body .hobby .hobbyCardHolder .hobbyCards .hobbyImageHolder {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hobbyCards {
+        position: relative;
+    }
+
+    .hobbyCards .hikingName {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .hobbyCards .hikingName p {
+        font-weight: 400;
+        font-size: 12px;
+        color: #414040;
+    }
+
+    .main-body .qoutes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-body .qoutes .qoutes-left {
+        width: 100%;
+    }
+
+    .main-body .qoutes .qoutes-right {
+        width: 100%;
+    }
+}

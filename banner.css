@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+.arrow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 120px; */
+}
+.arrow h1{
+width: 75%;
+text-align: center;
+}
+.banners{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  /* align-items: center; */
+}
+.bannerone{
+    width: 80%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color:  rgb(19, 62, 135,0.3);
+    border-radius: 10px;
+    border: 2px solid rgb(19, 62, 135,0.3);
+}
+.wrapper .bannerone .image{
+    width: 40%;
+    /* height: 350px; */
+    position: relative;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  }
+  .bannerone .content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bannerone .content button{
+    width: 30%;
+  }
+  /* resposnsive */
+  @media (max-width: 930px) {
+    .wrapper {
+      padding: 30px 60px;
+      gap: 30px;
+    }
+  }
+  @media (max-width: 730px) {
+    .bannerone{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+  .wrapper .bannerone .image{
+    width: 90%;
+  }
+  .bannerone .content{
+    width: 90%;
+  }
+}
+  /* 2 */
+  @media(max-width:570px) {
+    .wrapper {
+        padding: 20px 24px;
+        gap: 16px;
+    }
+  }
+  
+ 
